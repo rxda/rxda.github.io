@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>WR720Nv3折腾日记 | RXDA����</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="WR720N OPENWRT完全教程（2017）1.系统使用我编译的带luci和usb ext4驱动的固件链接: https://pan.baidu.com/s/1kUU4mpT 密码: 4nah 2.关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.开始挂载 在luci界面挂载sda1为/">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WR720Nv3折腾日记">
+<meta property="og:url" content="http://yoursite.com/2017/04/24/WR720Nv3折腾日记/index.html">
+<meta property="og:site_name" content="RXDA����">
+<meta property="og:description" content="WR720N OPENWRT完全教程（2017）1.系统使用我编译的带luci和usb ext4驱动的固件链接: https://pan.baidu.com/s/1kUU4mpT 密码: 4nah 2.关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.开始挂载 在luci界面挂载sda1为/">
+<meta property="og:updated_time" content="2017-04-24T06:36:47.173Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WR720Nv3折腾日记">
+<meta name="twitter:description" content="WR720N OPENWRT完全教程（2017）1.系统使用我编译的带luci和usb ext4驱动的固件链接: https://pan.baidu.com/s/1kUU4mpT 密码: 4nah 2.关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.开始挂载 在luci界面挂载sda1为/">
+  
+    <link rel="alternate" href="/atom.xml" title="RXDA����" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">RXDA����</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">���ڼ�¼</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-WR720Nv3折腾日记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/04/24/WR720Nv3折腾日记/" class="article-date">
+  <time datetime="2017-04-24T04:42:05.000Z" itemprop="datePublished">2017-04-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      WR720Nv3折腾日记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="WR720N-OPENWRT完全教程（2017）"><a href="#WR720N-OPENWRT完全教程（2017）" class="headerlink" title="WR720N OPENWRT完全教程（2017）"></a>WR720N OPENWRT完全教程（2017）</h1><h4 id="1-系统"><a href="#1-系统" class="headerlink" title="1.系统"></a>1.系统</h4><p>使用我编译的带luci和usb ext4驱动的固件<br>链接: <a href="https://pan.baidu.com/s/1kUU4mpT" target="_blank" rel="external">https://pan.baidu.com/s/1kUU4mpT</a> 密码: 4nah</p>
+<h4 id="2-关闭路由器"><a href="#2-关闭路由器" class="headerlink" title="2.关闭路由器"></a>2.关闭路由器</h4><p>格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。<br>将路由器模式开关调为3g，开启路由器。<br>等到路由器灯不闪了，ssh登录路由器。</p>
+<h4 id="3-开始挂载"><a href="#3-开始挂载" class="headerlink" title="3.开始挂载"></a>3.开始挂载</h4><p> 在luci界面挂载sda1为/overlay，挂载swap<br> 复制系统文件到sda1</p>
+<pre><code>mount /dev/sda1 /mnt ; tar -C /overlay -cvf - . | tar -C /mnt -xf - ; umount /mnt
+</code></pre><p>重启后再挂载一次  </p>
+<h4 id="4-下载shadowsocks"><a href="#4-下载shadowsocks" class="headerlink" title="4.下载shadowsocks"></a>4.下载shadowsocks</h4><p><a href="https://github.com/shadowsocks/openwrt-shadowsocks/releases" target="_blank" rel="external">https://github.com/shadowsocks/openwrt-shadowsocks/releases</a>  </p>
+<p>先安装3个lib依赖，如有libp缺失，opkg update 后再安装  </p>
+<p> shadowsocks-luci  </p>
+<p><a href="https://github.com/shadowsocks/luci-app-shadowsocks/releases" target="_blank" rel="external">https://github.com/shadowsocks/luci-app-shadowsocks/releases</a>  </p>
+<h4 id="5-安装-chinadns"><a href="#5-安装-chinadns" class="headerlink" title="5.安装 chinadns"></a>5.安装 chinadns</h4><p><a href="https://github.com/aa65535/openwrt-chinadns/releases" target="_blank" rel="external">https://github.com/aa65535/openwrt-chinadns/releases</a>  </p>
+<p><a href="https://github.com/aa65535/openwrt-dist-luci/releases" target="_blank" rel="external">https://github.com/aa65535/openwrt-dist-luci/releases</a></p>
+<h4 id="6-更新CHinaDns"><a href="#6-更新CHinaDns" class="headerlink" title="6.更新CHinaDns"></a>6.更新CHinaDns</h4><p>新建一个文件 /root/update_ignore_list.sh 写入如下内容:  </p>
+<pre><code>#!/bin/sh
+
+set -e -o pipefail
+
+wget -O- &apos;http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&apos; | \
+awk -F\| &apos;/CN\|ipv4/ { printf(&quot;%s/%d\n&quot;, $4, 32-log($5)/log(2)) }&apos; &gt; \
+/tmp/chinadns_chnroute.txt
+
+mv /tmp/chinadns_chnroute.txt /etc/
+
+if pidof ss-redir&gt;/dev/null; then
+/etc/init.d/shadowsocks restart
+fi
+</code></pre><p>chmod +x /root/update_ignore_list.sh</p>
+<p>打开路由器管.理页面 系统 - 计划任务 填写如下内容（每天 04:30 执行）:  </p>
+<pre><code>30    4     *     *     *     /root/update_ignore_list&gt;/dev/null 2&gt;&amp;1
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/24/WR720Nv3折腾日记/" data-id="cj1vrd9jn0000csupkgl7ci4b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/04/24/WR720Nv3折腾日记/">WR720Nv3折腾日记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 RXDA<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

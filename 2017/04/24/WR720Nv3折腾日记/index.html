@@ -5,17 +5,17 @@
   
   <title>WR720Nv3折腾日记 | RXDA随笔</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="WR720N OPENWRT完全教程（2017）1.系统使用我编译的带luci和usb ext4驱动的固件链接: https://pan.baidu.com/s/1kUU4mpT 密码: 4nah 2.关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.开始挂载 在luci界面挂载sda1为/">
+  <meta name="description" content="WR720N OPENWRT完全教程（2017）1.  系统使用我编译的带luci和usb ext4驱动的固件链接: 百度网盘 密码: 4nah 2.  关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.  开始挂载 在luci界面挂载sda1为/overlay，挂载swap 复制系统文件到">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WR720Nv3折腾日记">
 <meta property="og:url" content="http://yoursite.com/2017/04/24/WR720Nv3折腾日记/index.html">
 <meta property="og:site_name" content="RXDA随笔">
-<meta property="og:description" content="WR720N OPENWRT完全教程（2017）1.系统使用我编译的带luci和usb ext4驱动的固件链接: https://pan.baidu.com/s/1kUU4mpT 密码: 4nah 2.关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.开始挂载 在luci界面挂载sda1为/">
-<meta property="og:updated_time" content="2017-04-24T06:36:47.173Z">
+<meta property="og:description" content="WR720N OPENWRT完全教程（2017）1.  系统使用我编译的带luci和usb ext4驱动的固件链接: 百度网盘 密码: 4nah 2.  关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.  开始挂载 在luci界面挂载sda1为/overlay，挂载swap 复制系统文件到">
+<meta property="og:updated_time" content="2017-04-27T09:55:25.460Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WR720Nv3折腾日记">
-<meta name="twitter:description" content="WR720N OPENWRT完全教程（2017）1.系统使用我编译的带luci和usb ext4驱动的固件链接: https://pan.baidu.com/s/1kUU4mpT 密码: 4nah 2.关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.开始挂载 在luci界面挂载sda1为/">
+<meta name="twitter:description" content="WR720N OPENWRT完全教程（2017）1.  系统使用我编译的带luci和usb ext4驱动的固件链接: 百度网盘 密码: 4nah 2.  关闭路由器格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。将路由器模式开关调为3g，开启路由器。等到路由器灯不闪了，ssh登录路由器。 3.  开始挂载 在luci界面挂载sda1为/overlay，挂载swap 复制系统文件到">
   
     <link rel="alternate" href="/atom.xml" title="RXDA随笔" type="application/atom+xml">
   
@@ -57,9 +57,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -90,39 +90,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="WR720N-OPENWRT完全教程（2017）"><a href="#WR720N-OPENWRT完全教程（2017）" class="headerlink" title="WR720N OPENWRT完全教程（2017）"></a>WR720N OPENWRT完全教程（2017）</h1><h4 id="1-系统"><a href="#1-系统" class="headerlink" title="1.系统"></a>1.系统</h4><p>使用我编译的带luci和usb ext4驱动的固件<br>链接: <a href="https://pan.baidu.com/s/1kUU4mpT" target="_blank" rel="external">https://pan.baidu.com/s/1kUU4mpT</a> 密码: 4nah</p>
-<h4 id="2-关闭路由器"><a href="#2-关闭路由器" class="headerlink" title="2.关闭路由器"></a>2.关闭路由器</h4><p>格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。<br>将路由器模式开关调为3g，开启路由器。<br>等到路由器灯不闪了，ssh登录路由器。</p>
-<h4 id="3-开始挂载"><a href="#3-开始挂载" class="headerlink" title="3.开始挂载"></a>3.开始挂载</h4><p> 在luci界面挂载sda1为/overlay，挂载swap<br> 复制系统文件到sda1</p>
-<pre><code>mount /dev/sda1 /mnt ; tar -C /overlay -cvf - . | tar -C /mnt -xf - ; umount /mnt
-</code></pre><p>重启后再挂载一次  </p>
-<h4 id="4-下载shadowsocks"><a href="#4-下载shadowsocks" class="headerlink" title="4.下载shadowsocks"></a>4.下载shadowsocks</h4><p><a href="https://github.com/shadowsocks/openwrt-shadowsocks/releases" target="_blank" rel="external">https://github.com/shadowsocks/openwrt-shadowsocks/releases</a>  </p>
+        <h1 id="WR720N-OPENWRT完全教程（2017）"><a href="#WR720N-OPENWRT完全教程（2017）" class="headerlink" title="WR720N OPENWRT完全教程（2017）"></a>WR720N OPENWRT完全教程（2017）</h1><h4 id="1-系统"><a href="#1-系统" class="headerlink" title="1.  系统"></a>1.  系统</h4><p>使用我编译的带luci和usb ext4驱动的固件<br>链接: <a href="https://pan.baidu.com/s/1kUU4mpT" target="_blank" rel="external">百度网盘</a> 密码: 4nah</p>
+<h4 id="2-关闭路由器"><a href="#2-关闭路由器" class="headerlink" title="2.  关闭路由器"></a>2.  关闭路由器</h4><p>格式化准备好的u盘为ext4，和swap,并插入路由器的usb口。<br>将路由器模式开关调为3g，开启路由器。<br>等到路由器灯不闪了，ssh登录路由器。</p>
+<h4 id="3-开始挂载"><a href="#3-开始挂载" class="headerlink" title="3.  开始挂载"></a>3.  开始挂载</h4><p> 在luci界面挂载sda1为/overlay，挂载swap<br> 复制系统文件到sda1<br><code>mount /dev/sda1 /mnt ; tar -C /overlay -cvf - . | tar -C /mnt -xf - ; umount /mnt</code><br>重启后再挂载一次  </p>
+<h4 id="4-下载shadowsocks"><a href="#4-下载shadowsocks" class="headerlink" title="4.  下载shadowsocks"></a>4.  下载shadowsocks</h4><p><a href="https://github.com/shadowsocks/openwrt-shadowsocks/releases" target="_blank" rel="external">shadowsocks</a>  </p>
 <p>先安装3个lib依赖，如有libp缺失，opkg update 后再安装  </p>
-<p> shadowsocks-luci  </p>
-<p><a href="https://github.com/shadowsocks/luci-app-shadowsocks/releases" target="_blank" rel="external">https://github.com/shadowsocks/luci-app-shadowsocks/releases</a>  </p>
-<h4 id="5-安装-chinadns"><a href="#5-安装-chinadns" class="headerlink" title="5.安装 chinadns"></a>5.安装 chinadns</h4><p><a href="https://github.com/aa65535/openwrt-chinadns/releases" target="_blank" rel="external">https://github.com/aa65535/openwrt-chinadns/releases</a>  </p>
-<p><a href="https://github.com/aa65535/openwrt-dist-luci/releases" target="_blank" rel="external">https://github.com/aa65535/openwrt-dist-luci/releases</a></p>
-<h4 id="6-更新CHinaDns"><a href="#6-更新CHinaDns" class="headerlink" title="6.更新CHinaDns"></a>6.更新CHinaDns</h4><p>新建一个文件 /root/update_ignore_list.sh 写入如下内容:  </p>
-<pre><code>#!/bin/sh
-
-set -e -o pipefail
-
-wget -O- &apos;http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&apos; | \
-awk -F\| &apos;/CN\|ipv4/ { printf(&quot;%s/%d\n&quot;, $4, 32-log($5)/log(2)) }&apos; &gt; \
-/tmp/chinadns_chnroute.txt
-
-mv /tmp/chinadns_chnroute.txt /etc/
-
-if pidof ss-redir&gt;/dev/null; then
-/etc/init.d/shadowsocks restart
-fi
-</code></pre><p>chmod +x /root/update_ignore_list.sh</p>
+<p> <a href="https://github.com/shadowsocks/luci-app-shadowsocks/releases" target="_blank" rel="external">shadowsocks-LuciApp</a>  </p>
+<h4 id="5-安装-chinadns"><a href="#5-安装-chinadns" class="headerlink" title="5.  安装 chinadns"></a>5.  安装 chinadns</h4><p><a href="https://github.com/aa65535/openwrt-chinadns/releases" target="_blank" rel="external">ChinaDNS</a>  </p>
+<p><a href="https://github.com/aa65535/openwrt-dist-luci/releases" target="_blank" rel="external">ChinaDNS-LuciApp</a></p>
+<h4 id="6-更新CHinaDns"><a href="#6-更新CHinaDns" class="headerlink" title="6.  更新CHinaDns"></a>6.  更新CHinaDns</h4><p>新建一个文件 /root/update_ignore_list.sh 写入如下内容:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">#!/bin/sh</div><div class="line"></div><div class="line">set -e -o pipefail</div><div class="line"></div><div class="line">wget -O- &apos;http://ftp.apnic.net/apnic/stats/apnic/delegated-apnic-latest&apos; | \</div><div class="line">awk -F\| &apos;/CN\|ipv4/ &#123; printf(&quot;%s/%d\n&quot;, $4, 32-log($5)/log(2)) &#125;&apos; &gt; \ /tmp/chinadns_chnroute.txt</div><div class="line"></div><div class="line">mv /tmp/chinadns_chnroute.txt /etc/</div><div class="line"></div><div class="line">if pidof ss-redir&gt;/dev/null; then</div><div class="line">/etc/init.d/shadowsocks restart</div><div class="line">fi</div><div class="line"></div><div class="line">chmod +x /root/update_ignore_list.sh</div></pre></td></tr></table></figure></p>
 <p>打开路由器管.理页面 系统 - 计划任务 填写如下内容（每天 04:30 执行）:  </p>
-<pre><code>30    4     *     *     *     /root/update_ignore_list&gt;/dev/null 2&gt;&amp;1
-</code></pre>
+<p><code>30    4     *     *     *     /root/update_ignore_list&gt;/dev/null 2&gt;&amp;1</code></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/24/WR720Nv3折腾日记/" data-id="cj1vrd9jn0000csupkgl7ci4b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/04/24/WR720Nv3折腾日记/" data-id="cj1vrd9jn0000csupkgl7ci4b" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -156,7 +139,7 @@ fi
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -177,7 +160,7 @@ fi
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 RXDA<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
